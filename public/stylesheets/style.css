@@ -22,6 +22,21 @@ a {
     font: 12px sans-serif;
   }
 
+  .nodeerror text {
+    font: 12px sans-serif;
+    color: red;
+  }
+
+  .nodeerror circle {
+    fill: #fff;
+    stroke: red;
+    stroke-width: 3px;
+  }
+
+  .nodeerror text {
+    font: 12px sans-serif;
+  }
+
   .link {
     fill: none;
     stroke: #ccc;
