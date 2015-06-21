@@ -137,7 +137,8 @@ app.controller("MonitorController", function($scope) {
 
     // Enter any new nodes at the parent's previous position.
     var nodeEnter = node.enter().append("g")
-      .attr("class", "node")
+      //TODO: Verificar neste ponto o status do nó. E configurar stable ou error
+      .attr("class", "node stable")
       .attr("id", function(d) {
         return d.name;
       })
@@ -264,7 +265,7 @@ app.controller("MonitorController", function($scope) {
   $scope.execute = function() {
     console.log("Calling function");
     console.log($scope.nodename);
-    $('#' + $scope.nodename).attr("class", "nodeerror");
+    $('#' + $scope.nodename).attr("class", "node error");
   };
 
   $scope.init();
